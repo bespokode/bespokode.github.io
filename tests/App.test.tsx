@@ -1,5 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../src/App";
+import { expect, test } from "vitest";
+import React from "react";
 
 test("renders home react link", () => {
   render(<App />);
