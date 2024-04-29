@@ -34,16 +34,30 @@ const CustomNavBar = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
-          <Image src={imagotipo_s} rounded height={50} />
+          <img src={logoUrl} height={50} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/" className="nav-link active">
-              Home
+        <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggler" />
+        <Navbar.Offcanvas id="basic-navbar-nav">
+          <div className="offcanvas-header">
+            <h5
+              className="offcanvas-title font-astro"
+              id="offcanvasNavbarLabel"
+            >
+              Bespokode
+            </h5>
+            <button
+              type="button"
+              className="btn-close"
+              onClick={() => document.getElementById("nav-toggler")?.click()}
+              aria-label="Close"
+            ></button>
+          </div>
+          <Nav className="me-auto w-100">
+            <Link to="/" className="nav-link active m-2">
+              {<FaHouse />} Home
             </Link>
-            <Link to="/info" className="nav-link active">
-              Nosotros
+            <Link to="/info" className="nav-link active m-2 ">
+              {<FaQuestion />} Nosotros
             </Link>
             <button
               onClick={toggleTheme}
@@ -52,7 +66,7 @@ const CustomNavBar = () => {
               {themeLogo}
             </button>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Offcanvas>
       </Container>
     </Navbar>
   );
