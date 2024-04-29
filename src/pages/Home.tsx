@@ -4,8 +4,8 @@ import { bg_index_image } from "../assets";
 
 const Home = () => {
   return (
-    <Stack className="w-100 h-100 d-flex justify-content-center align-items-center">
-      <div className="w-100 overflow-hidden h-100  ">
+    <Stack className="w-100 h-100 ">
+      <div className="w-100 overflow-hidden h-75 d-flex justify-content-center align-items-center ">
         <Image
           src={bg_index_image}
           className="opacity-25 w-100 h-100 object-fit-cover "
