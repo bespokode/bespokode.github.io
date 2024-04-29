@@ -1,8 +1,11 @@
 {
   "name": "vite-template-react",
   "version": "1.4.0",
-  "type":"module",
+  "homepage": "http://bespokode.github.io",
+  "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "vite --port 3000 --open",
     "dev": "vite --port 3000 --open",
     "build": "vite build",
@@ -10,15 +13,21 @@
     "test": "vitest"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
     "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.1.1",
     "jsdom": "^23.0.1",
     "vite": "^5.0.8",
+    "vite-plugin-fonts": "^0.7.0",
     "vitest": "^1.1.1"
   }
 }
