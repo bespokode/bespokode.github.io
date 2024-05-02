@@ -3,6 +3,10 @@ img {
     user-select: none;
 }
 
+*{
+    transition: 50ms;
+}
+
 @font-face {
     font-family:AstroSpace;
     src: url('/fonts/AstroSpace.otf');
