@@ -31,7 +31,7 @@ const CustomNavBar = () => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary sticky-top">
       <Container>
         <Navbar.Brand href="/">
           <img src={logoUrl} height={50} />
@@ -54,10 +54,10 @@ const CustomNavBar = () => {
           </div>
           <Nav className="me-auto w-100">
             <Link to="/" className="nav-link active m-2">
-              {<FaHouse />} Home
+              Home
             </Link>
             <Link to="/info" className="nav-link active m-2 ">
-              {<FaQuestion />} Nosotros
+              Nosotros
             </Link>
             <button
               onClick={toggleTheme}
