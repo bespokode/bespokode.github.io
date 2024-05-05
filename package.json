@@ -8,6 +8,7 @@
     "deploy": "gh-pages -d build",
     "start": "vite --port 3000 --open",
     "dev": "vite --port 3000 --open",
+    "prebuild": "eslint .",
     "build": "vite build",
     "serve": "vite preview --open",
     "test": "vitest"

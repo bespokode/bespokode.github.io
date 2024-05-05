@@ -28,5 +28,5 @@
   "rules": {
     // Aquí puedes configurar tus reglas específicas
   },
-  "ignores": ["./build/*", "./node_modules/*"]
+  "ignorePatterns": ["build/", "node_modules/"]
 }
