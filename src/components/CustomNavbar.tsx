@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container, Image } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { imagotipo_s_dark, imagotipo_s_light } from "../assets/index";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -8,7 +8,8 @@ import {
   setTheme,
   showActiveTheme,
 } from "../helpers/theme.helper";
-import { FaSun, FaMoon, FaHouse, FaQuestion } from "react-icons/fa6";
+import { FaSun, FaMoon } from "react-icons/fa6";
+import i18next from "../i18n/index";
 
 const CustomNavBar = () => {
   const [currentTheme, setCurrentTheme] = useState(getPreferredTheme());

@@ -1,4 +1,4 @@
-import React, { Component, HTMLAttributes } from "react";
+import React, { HTMLAttributes } from "react";
 
 interface IPropsCaptionCard extends HTMLAttributes<HTMLPictureElement> {
   ImgSource: string;

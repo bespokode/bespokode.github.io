@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import CustomNavBar from "./components/CustomNavbar";
 import React from "react";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
       </Routes>
-    </HashRouter>
+    </HashRouter> 
   );
 }
 export default App;

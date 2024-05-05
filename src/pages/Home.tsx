@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Image, Stack } from "react-bootstrap";
+import { Image, Stack } from "react-bootstrap";
 import { bg_index_image, bg_laptop_image } from "../assets";
 import TypewriterEffect from "../components/typewriter";
 import CaptionCard from "../components/CaptionCard";
