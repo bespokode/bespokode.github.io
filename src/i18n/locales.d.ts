@@ -1,4 +1,5 @@
 export default interface ILocales {
-    expert_bespoke_solutions: string;
-    button_home: string;
+  expert_bespoke_solutions: string;
+  button_home: string;
+  webpage_caption_card: string;
 }

@@ -55,7 +55,7 @@ const CustomNavBar = () => {
           </div>
           <Nav className="me-auto w-100">
             <Link to="/" className="nav-link active m-2">
-              Home
+              {i18next.t("button_home")}
             </Link>
             <Link to="/info" className="nav-link active m-2 ">
               Nosotros
