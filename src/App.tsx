@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/info" element={<Info />} />
       </Routes>
-    </HashRouter> 
+    </HashRouter>
   );
 }
 export default App;

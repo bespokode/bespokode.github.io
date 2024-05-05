@@ -8,7 +8,7 @@ const TypewriterEffect = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-    let intervalId = setInterval(()=>{});
+    let intervalId = setInterval(() => {});
 
     const typeNextCharacter = () => {
       const currentWord = words[displayWordIndex];

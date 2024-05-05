@@ -14,10 +14,10 @@ import i18next from "../i18n/index";
 const CustomNavBar = () => {
   const [currentTheme, setCurrentTheme] = useState(getPreferredTheme());
   const [logoUrl, setLogoUrl] = useState(
-    currentTheme === "dark" ? imagotipo_s_dark : imagotipo_s_light
+    currentTheme === "dark" ? imagotipo_s_dark : imagotipo_s_light,
   );
   const [themeLogo, setThemeLogo] = useState(
-    currentTheme === "dark" ? <FaSun /> : <FaMoon />
+    currentTheme === "dark" ? <FaSun /> : <FaMoon />,
   );
 
   const toggleTheme = () => {

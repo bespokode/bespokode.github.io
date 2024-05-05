@@ -17,7 +17,7 @@ const setTheme = (theme: string) => {
       "data-bs-theme",
       window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
-        : "light"
+        : "light",
     );
   } else {
     document.documentElement.setAttribute("data-bs-theme", theme);
@@ -35,7 +35,7 @@ const showActiveTheme = (theme: string, focus = false) => {
   const activeThemeIcon = document.querySelector(".theme-icon-active use");
   if (!activeThemeIcon) return;
   const btnToActive = document.querySelector(
-    `[data-bs-theme-value="${theme}"]`
+    `[data-bs-theme-value="${theme}"]`,
   ) as HTMLElement | null;
   if (!btnToActive) return;
 

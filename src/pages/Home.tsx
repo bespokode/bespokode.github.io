@@ -3,6 +3,7 @@ import { Image, Stack } from "react-bootstrap";
 import { bg_index_image, bg_laptop_image } from "../assets";
 import TypewriterEffect from "../components/typewriter";
 import CaptionCard from "../components/CaptionCard";
+import i18next from "../i18n/index";
 
 const Home = () => {
   return (
@@ -22,14 +23,18 @@ const Home = () => {
         </h1>
       </div>
       <div className="mt-5 text-center">
-        <h1 className="fw-bold">Experts in bespoke software solutions.</h1>
+        <h1 className="fw-bold">{i18next.t("expert_bespoke_solutions")}</h1>
         <div className="container text-center">
           <div className="row">
-            <div className="col m-2 rounded">
-              <CaptionCard ImgSource={bg_laptop_image} className="w-100"  />
+            <div className="col m-1 rounded">
+              <CaptionCard
+                ButtonLink=""
+                TextFocus={i18next.t("webpage_caption_card")}
+                ImgSource={bg_laptop_image}
+              />
             </div>
-            <div className="col-6 bg-info m-2 rounded">2 of 3 (wider)</div>
-            <div className="col bg-info m-2 rounded">3 of 3</div>
+            <div className="col-6 bg-info m-1 rounded">2 of 3 (wider)</div>
+            <div className="col bg-info m-1 rounded">3 of 3</div>
           </div>
         </div>
       </div>

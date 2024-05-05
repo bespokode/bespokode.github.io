@@ -19,10 +19,7 @@
   "globals": {
     // Añade tus globales personalizados aquí si los tienes
   },
-  "plugins": [
-    "@typescript-eslint",
-    "react"
-  ],
+  "plugins": ["@typescript-eslint", "react"],
   "settings": {
     "react": {
       "version": "detect"
@@ -30,5 +27,6 @@
   },
   "rules": {
     // Aquí puedes configurar tus reglas específicas
-  }
+  },
+  "ignores": ["./build/*", "./node_modules/*"]
 }
