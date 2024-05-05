@@ -15,7 +15,7 @@ function CaptionCard({
   return (
     <div
       {...props}
-      className="card text-center"
+      className="card text-center shadow-lg"
       style={{
         backgroundImage: `url("${ImgSource}")`,
         backgroundPosition: "center" /* Center the image */,
@@ -25,8 +25,8 @@ function CaptionCard({
       }}
     >
       <div className="card-body">
-        <h4 className="card-title mb-4 text-light">{TextFocus}</h4>
-        <a href={ButtonLink} className="btn btn-primary">
+        <h4 className="card-title mb-5 text-light">{TextFocus}</h4>
+        <a href={ButtonLink} className="btn btn-primary mt-5">
           Saber mas
         </a>
       </div>
