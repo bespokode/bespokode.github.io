@@ -23,18 +23,32 @@ const Home = () => {
         </h1>
       </div>
       <div className="mt-5 text-center">
-        <h1 className="fw-bold">{i18next.t("expert_bespoke_solutions")}</h1>
+        <h1 className="fw-bold mb-4">
+          {i18next.t("expert_bespoke_solutions")}
+        </h1>
         <div className="container text-center">
           <div className="row">
-            <div className="col m-1 rounded">
+            <div className="col mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
                 TextFocus={i18next.t("webpage_caption_card")}
                 ImgSource={bg_laptop_image}
               />
             </div>
-            <div className="col-6 bg-info m-1 rounded">2 of 3 (wider)</div>
-            <div className="col bg-info m-1 rounded">3 of 3</div>
+            <div className="col-6 mb-2 rounded">
+              <CaptionCard
+                ButtonLink=""
+                TextFocus={i18next.t("webpage_caption_card")}
+                ImgSource={bg_laptop_image}
+              />
+            </div>
+            <div className="col mb-2 rounded">
+              <CaptionCard
+                ButtonLink=""
+                TextFocus={i18next.t("webpage_caption_card")}
+                ImgSource={bg_laptop_image}
+              />
+            </div>
           </div>
         </div>
       </div>
