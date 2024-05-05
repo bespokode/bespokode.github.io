@@ -1,22 +1,36 @@
 import React, { HTMLAttributes } from "react";
 
-interface IPropsCaptionCard extends HTMLAttributes<HTMLPictureElement> {
+interface IPropsCaptionCard extends HTMLAttributes<HTMLDivElement> {
   ImgSource: string;
+  TextFocus: string;
+  ButtonLink: string;
 }
 
 function CaptionCard({
   ImgSource,
+  TextFocus,
+  ButtonLink,
   ...props
 }: IPropsCaptionCard): React.ReactNode {
   return (
-    <picture {...props}>
-      <img
-        src={ImgSource}
-        alt=""
-        className="rounded d-block w-100 object-fit-cover"
-      />
-      <h3>hola</h3>
-    </picture>
+    <div
+      {...props}
+      className="card text-center"
+      style={{
+        backgroundImage: `url("${ImgSource}")`,
+        backgroundPosition: "center" /* Center the image */,
+        backgroundRepeat: "no-repeat" /* Do not repeat the image */,
+        backgroundSize:
+          "cover" /* Resize the background image to cover the entire container */,
+      }}
+    >
+      <div className="card-body">
+        <h4 className="card-title mb-4 text-light">{TextFocus}</h4>
+        <a href={ButtonLink} className="btn btn-primary">
+          Saber mas
+        </a>
+      </div>
+    </div>
   );
 }
 
