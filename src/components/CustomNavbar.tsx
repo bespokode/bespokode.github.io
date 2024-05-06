@@ -57,9 +57,6 @@ const CustomNavBar = () => {
             <Link to="/" className="nav-link active m-2">
               {i18next.t("button_home")}
             </Link>
-            <Link to="/info" className="nav-link active m-2 ">
-              Nosotros
-            </Link>
             <NavDropdown
               title={i18next.t("options_navbar_button")}
               id="basic-nav-dropdown"
