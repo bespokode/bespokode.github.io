@@ -38,8 +38,8 @@ const Home = () => {
             <div className="col-6 mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
-                TextFocus={i18next.t("webpage_caption_card")}
-                ImgSource={bg_laptop_image}
+                TextFocus={i18next.t("captioncard_mobileDevelopment")}
+                ImgSource={bg_mobile_delopment}
               />
             </div>
             <div className="col mb-2 rounded">
