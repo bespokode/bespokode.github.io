@@ -26,7 +26,7 @@ function CaptionCard({
     >
       <div className="card-body">
         <h4 className="card-title mb-5 text-light">{TextFocus}</h4>
-        <a href={ButtonLink} className="btn btn-primary mt-5">
+        <a href={ButtonLink} className="btn btn-info mt-5">
           Saber mas
         </a>
       </div>
