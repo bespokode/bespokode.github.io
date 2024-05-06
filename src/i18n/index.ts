@@ -5,17 +5,17 @@ import i18nextBrowserLanguagedetector, {
 import { eng } from "./en";
 import { esp } from "./es";
 
-const options: DetectorOptions = {
+const DetectLanguageOptions: DetectorOptions = {
   // order and from where user language should be detected
   order: [
+    "path",
     "querystring",
-    "cookie",
     "localStorage",
     "sessionStorage",
-    "navigator",
-    "htmlTag",
-    "path",
     "subdomain",
+    "cookie",
+    "htmlTag",
+    "navigator",
   ],
 
   // keys or params to lookup language from
@@ -46,7 +46,7 @@ const options: DetectorOptions = {
 
 i18next.use(i18nextBrowserLanguagedetector).init({
   supportedLngs: ["en", "es"],
-  detection: options,
+  detection: DetectLanguageOptions,
   interpolation: {
     escapeValue: false,
   },
