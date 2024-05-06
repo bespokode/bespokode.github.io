@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from "react";
+import { Link } from "react-router-dom";
 
 interface IPropsCaptionCard extends HTMLAttributes<HTMLDivElement> {
   ImgSource: string;
@@ -26,9 +27,9 @@ function CaptionCard({
     >
       <div className="card-body">
         <h4 className="card-title mb-5 text-light">{TextFocus}</h4>
-        <a href={ButtonLink} className="btn btn-info mt-5">
+        <Link to={ButtonLink} className="btn btn-info mt-5">
           Saber mas
-        </a>
+        </Link>
       </div>
     </div>
   );
