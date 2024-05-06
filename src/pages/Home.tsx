@@ -28,14 +28,14 @@ const Home = () => {
       </div>
       <div className="mt-5 text-center">
         <h1 className="fw-bold mb-4">
-          {i18next.t("expert_bespoke_solutions")}
+          {i18next.t("homepage_expertBespokeSolutions")}
         </h1>
         <div className="container text-center">
           <div className="row">
             <div className="col-12 mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
-                TextFocus={i18next.t("webpage_caption_card")}
+                TextFocus={i18next.t("captioncard_webpageDevelopment")}
                 ImgSource={bg_laptop_image}
               />
             </div>
@@ -49,7 +49,7 @@ const Home = () => {
             <div className="col mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
-                TextFocus={i18next.t("webpage_caption_card")}
+                TextFocus={i18next.t("captioncard_webpageDevelopment")}
                 ImgSource={bg_laptop_image}
               />
             </div>

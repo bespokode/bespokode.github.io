@@ -55,14 +55,16 @@ const CustomNavBar = () => {
           </div>
           <Nav className="me-auto w-100">
             <Link to="/" className="nav-link active m-2">
-              {i18next.t("button_home")}
+              {i18next.t("navbar_homeButton")}
             </Link>
             <NavDropdown
-              title={i18next.t("options_navbar_button")}
+              title={i18next.t("navbar_optionsButton")}
               id="basic-nav-dropdown"
               className="ms-auto m-2 float-end h-100"
             >
-              <NavDropdown.Header>{i18next.t("theme")}</NavDropdown.Header>
+              <NavDropdown.Header>
+                {i18next.t("navbar_themeTitle")}
+              </NavDropdown.Header>
               <button
                 onClick={toggleTheme}
                 className="btn rounded border d-block m-auto w-75 "
@@ -70,7 +72,9 @@ const CustomNavBar = () => {
                 {themeLogo}
               </button>
               <NavDropdown.Divider />
-              <NavDropdown.Header>{i18next.t("language")}</NavDropdown.Header>
+              <NavDropdown.Header>
+                {i18next.t("navbar_languageTitle")}
+              </NavDropdown.Header>
               <NavDropdown.Item
                 onClick={() =>
                   i18next

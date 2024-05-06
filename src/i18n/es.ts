@@ -1,10 +1,12 @@
 import ILocales from "./locales";
 
 export const esp: ILocales = {
-  expert_bespoke_solutions: "Expertos en soluciones de software a medida.",
-  button_home: "Inicio",
-  webpage_caption_card: "Desarrollo de paginas y aplicaciones Web.",
-  options_navbar_button: "Opciones",
-  language: "Lenguaje",
-  theme: "Tema"
+  homepage_expertBespokeSolutions:
+    "Expertos en soluciones de software a medida.",
+  captioncard_webpageDevelopment: "Desarrollo de paginas y aplicaciones Web.",
+  captioncard_mobileDevelopment: "Desarrollo de aplicaciones moviles.",
+  navbar_homeButton: "Inicio",
+  navbar_optionsButton: "Opciones",
+  navbar_languageTitle: "Lenguaje",
+  navbar_themeTitle: "Tema",
 };

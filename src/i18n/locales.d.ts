@@ -1,8 +1,9 @@
 export default interface ILocales {
-  expert_bespoke_solutions: string;
-  button_home: string;
-  webpage_caption_card: string;
-  options_navbar_button: string;
-  language: string;
-  theme: string;
+  homepage_expertBespokeSolutions: string;
+  navbar_homeButton: string;
+  captioncard_webpageDevelopment: string;
+  captioncard_mobileDevelopment: string;
+  navbar_optionsButton: string;
+  navbar_languageTitle: string;
+  navbar_themeTitle: string;
 }
