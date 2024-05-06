@@ -28,14 +28,14 @@ const Home = () => {
         </h1>
         <div className="container text-center">
           <div className="row">
-            <div className="col mb-2 rounded">
+            <div className="col-12 mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
                 TextFocus={i18next.t("webpage_caption_card")}
                 ImgSource={bg_laptop_image}
               />
             </div>
-            <div className="col-6 mb-2 rounded">
+            <div className="col mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
                 TextFocus={i18next.t("captioncard_mobileDevelopment")}
