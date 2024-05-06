@@ -1,6 +1,10 @@
 import React from "react";
 import { Image, Stack } from "react-bootstrap";
-import { bg_index_image, bg_laptop_image } from "../assets";
+import {
+  bg_index_image,
+  bg_laptop_image,
+  bg_mobile_delopment,
+} from "../assets";
 import TypewriterEffect from "../components/typewriter";
 import CaptionCard from "../components/CaptionCard";
 import i18next from "../i18n/index";
