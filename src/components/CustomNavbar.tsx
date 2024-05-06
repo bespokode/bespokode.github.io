@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import { imagotipo_s_dark, imagotipo_s_light } from "../assets/index";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -60,12 +60,39 @@ const CustomNavBar = () => {
             <Link to="/info" className="nav-link active m-2 ">
               Nosotros
             </Link>
-            <button
-              onClick={toggleTheme}
-              className="btn rounded border ms-auto m-2 float-end w-auto"
+            <NavDropdown
+              title={i18next.t("options_navbar_button")}
+              id="basic-nav-dropdown"
+              className="ms-auto m-2 float-end h-100"
             >
-              {themeLogo}
-            </button>
+              <NavDropdown.Header>{i18next.t("theme")}</NavDropdown.Header>
+              <button
+                onClick={toggleTheme}
+                className="btn rounded border d-block m-auto w-75 "
+              >
+                {themeLogo}
+              </button>
+              <NavDropdown.Divider />
+              <NavDropdown.Header>{i18next.t("language")}</NavDropdown.Header>
+              <NavDropdown.Item
+                onClick={() =>
+                  i18next
+                    .changeLanguage("es")
+                    .then(() => window.location.reload())
+                }
+              >
+                Español
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() =>
+                  i18next
+                    .changeLanguage("en")
+                    .then(() => window.location.reload())
+                }
+              >
+                English
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Offcanvas>
       </Container>
