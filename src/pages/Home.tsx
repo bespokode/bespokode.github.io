@@ -47,7 +47,7 @@ const Home = () => {
         />
         <h1 className="text-center font-astro position-absolute top-50 start-50 translate-middle text-light">
           BespoKode Solutions
-          <br />
+          <hr />
           <TypewriterEffect phrases={TypewriterEffectTraductions} />
         </h1>
       </div>
