@@ -25,9 +25,17 @@ function CaptionCard({
           "cover" /* Resize the background image to cover the entire container */,
       }}
     >
-      <div className="card-body">
-        <h4 className="card-title mb-5 text-light">{TextFocus}</h4>
-        <Link to={ButtonLink} className="btn btn-info mt-5">
+      <div
+        className="card-body d-flex"
+        style={{
+          alignItems: "center",
+          flexDirection: "column",
+          height: "12rem",
+          justifyContent: "space-between",
+        }}
+      >
+        <h4 className="card-title text-light">{TextFocus}</h4>
+        <Link to={ButtonLink} className="btn btn-info ">
           Saber mas
         </Link>
       </div>

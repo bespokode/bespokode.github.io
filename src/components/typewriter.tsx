@@ -6,7 +6,6 @@ function sleep(ms: number) {
   while (Date.now() - start < ms);
 }
 
-
 const TypewriterEffect = ({ phrases }: { phrases: string[] }) => {
   const [stringIndex, setStringIndex] = useState(0);
   const [phraseIndex, setPhraseIndex] = useState(0);
