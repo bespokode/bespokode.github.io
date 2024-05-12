@@ -12,28 +12,12 @@ import i18next from "../i18n/index";
 
 const Home = () => {
   const TypewriterEffectTraductions: string[] = [
-    i18next.t("homepage_software_development"),
-    i18next.t("homepage_mobile_application_development"),
-    i18next.t("homepage_enterprise_security_software"),
-    i18next.t("homepage_api_development_experts"),
-    i18next.t("homepage_digital_transformation"),
-    i18next.t("homepage_artificial_intelligence_development"),
-    i18next.t("homepage_codes"),
-    i18next.t("homepage_blog"),
-    i18next.t("homepage_software_development_company_in_colombia"),
-    i18next.t("homepage_software_development_agency"),
-    i18next.t("homepage_web_development"),
-    i18next.t("homepage_customizable"),
-    i18next.t("homepage_guarantee"),
-    i18next.t("homepage_support"),
-    i18next.t("homepage_custom_projects"),
-    i18next.t("homepage_bespoke_software"),
-    i18next.t("homepage_deployment_of_computer_systems_in_the_cloud"),
-    i18next.t("homepage_updates"),
-    i18next.t("homepage_improvements_to_computer_systems"),
-    i18next.t("homepage_design_and_construction_of_cloud_applications"),
-    i18next.t("homepage_market_technologies"),
-    i18next.t("homepage_agile_methodologies"),
+    i18next.t("homepage_typewriteEffect_mobile"),
+    i18next.t("homepage_typewriteEffect_software"),
+    i18next.t("homepage_typewriteEffect_web"),
+    i18next.t("homepage_typewriteEffect_custom"),
+    i18next.t("homepage_typewriteEffect_security"),
+    i18next.t("homepage_typewriteEffect_API"),
   ];
   return (
     <Stack className="w-100">
