@@ -1,4 +1,26 @@
 export default interface ILocales {
+  homepage_software_development: string;
+  homepage_mobile_application_development: string;
+  homepage_enterprise_security_software: string;
+  homepage_api_development_experts: string;
+  homepage_digital_transformation: string;
+  homepage_artificial_intelligence_development: string;
+  homepage_codes: string;
+  homepage_blog: string;
+  homepage_software_development_company_in_colombia: string;
+  homepage_software_development_agency: string;
+  homepage_web_development: string;
+  homepage_customizable: string;
+  homepage_guarantee: string;
+  homepage_support: string;
+  homepage_custom_projects: string;
+  homepage_bespoke_software: string;
+  homepage_deployment_of_computer_systems_in_the_cloud: string;
+  homepage_updates: string;
+  homepage_improvements_to_computer_systems: string;
+  homepage_design_and_construction_of_cloud_applications: string;
+  homepage_market_technologies: string;
+  homepage_agile_methodologies: string;
   homepage_expertBespokeSolutions: string;
   navbar_homeButton: string;
   captioncard_webpageDevelopment: string;
