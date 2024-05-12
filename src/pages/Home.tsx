@@ -4,6 +4,7 @@ import {
   bg_index_image,
   bg_laptop_image,
   bg_mobile_delopment,
+  bg_secure_lock,
 } from "../assets";
 import TypewriterEffect from "../components/typewriter";
 import CaptionCard from "../components/CaptionCard";
@@ -49,8 +50,8 @@ const Home = () => {
             <div className="col mb-2 rounded">
               <CaptionCard
                 ButtonLink=""
-                TextFocus={i18next.t("captioncard_webpageDevelopment")}
-                ImgSource={bg_laptop_image}
+                TextFocus={i18next.t("captioncard_secureCode")}
+                ImgSource={bg_secure_lock}
               />
             </div>
           </div>
